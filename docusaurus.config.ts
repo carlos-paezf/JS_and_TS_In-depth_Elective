@@ -15,15 +15,19 @@ const config: Config = {
     },
 
     // Set the production url of your site here
-    url: 'https://your-docusaurus-site.example.com',
+    url: 'https://carlos-paezf.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: '/',
+    baseUrl: '/JS_and_TS_In-depth_Elective/',
+    trailingSlash: false,
+
+    // GitHub pages deployment dir.
+    deploymentBranch: 'gh-pages',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'carlos-paezf', // Usually your GitHub org/user name.
+    projectName: 'JS_and_TS_In-depth_Elective', // Usually your repo name.
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -32,8 +36,8 @@ const config: Config = {
     // useful metadata like html lang. For example, if your site is Chinese, you
     // may want to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'en',
-        locales: [ 'en' ],
+        defaultLocale: 'es',
+        locales: [ 'es', 'en' ],
     },
 
     presets: [
@@ -73,7 +77,7 @@ const config: Config = {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
         navbar: {
-            title: 'My Site',
+            title: 'JavaScript and TypeScript',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/logo.svg',
@@ -83,11 +87,11 @@ const config: Config = {
                     type: 'docSidebar',
                     sidebarId: 'tutorialSidebar',
                     position: 'left',
-                    label: 'Tutorial',
+                    label: 'Conoce la Teoría',
                 },
-                { to: '/blog', label: 'Blog', position: 'left' },
+                // { to: '/blog', label: 'Blog', position: 'left' },
                 {
-                    href: 'https://github.com/facebook/docusaurus',
+                    href: 'https://github.com/carlos-paezf/JS_and_TS_In-depth_Elective',
                     label: 'GitHub',
                     position: 'right',
                 },
@@ -146,7 +150,25 @@ const config: Config = {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
         },
+
+
+        // Improve SEO
+        metadata: [
+            { name: 'keywords', content: 'academic, explanation, university, algorithms, computer science, javascript, typescript, documentation' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+        ],
     } satisfies Preset.ThemeConfig,
+
+
+    // Enable the mermaid theme for markdown
+    markdown: {
+        mermaid: true
+    },
+
+    themes: [
+        '@docusaurus/theme-mermaid',
+        '@docusaurus/theme-live-codeblock'
+    ],
 };
 
 export default config;
