@@ -1,41 +1,71 @@
-# Website
+# Electiva de Profundización: JavaScript y TypeScript
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+[![wakatime](https://wakatime.com/badge/user/8ef73281-6d0a-4758-af11-fd880ca3009c/project/34ed8a63-ab6e-4920-8936-c9d34d789ed2.svg?style=for-the-badge)](https://wakatime.com/badge/user/8ef73281-6d0a-4758-af11-fd880ca3009c/project/34ed8a63-ab6e-4920-8936-c9d34d789ed2)
 
-## Installation
+> 🌟 *El conocimiento no es útil si no se comparte.*
 
-```bash
-yarn
-```
+Este proyecto es una plataforma de documentación educativa desarrollada con [Docusaurus](https://docusaurus.io/).
 
-## Local Development
+## Objetivo
 
-```bash
-yarn start
-```
+Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructurado y multilingüe, que facilite el acceso a los siguientes temas:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Internacionalización
 
-## Build
+El portal estará disponible en 2 idiomas:
 
-```bash
-yarn build
-```
+- 🇪🇸 Español (predeterminado)
+- 🇺🇸 Inglés
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Puedes cambiar el idioma desde el menú superior del sitio.
 
-## Deployment
+## Instalación local
 
-Using SSH:
+Para trabajar en el sitio de documentación de forma local:
 
 ```bash
-USE_SSH=true yarn deploy
+# Clona el repositorio
+git clone https://github.com/carlos-paezf/Software_Construction.git
+cd Software_Construction
+
+# Instala las dependencias
+npm install
+
+# Inicia el servidor de desarrollo
+npm run start
 ```
 
-Not using SSH:
+Abre <http://localhost:3000> en tu navegador.
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## Estructura del proyecto
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- `/docs` Contenidos originales en español
+- `/i18n/en` Traducciones al inglés
+- `src` Componentes y páginas personalizadas
+- `/static` Archivos estáticos (imágenes, descargas, etc.)
+
+## Contribuciones
+
+Este proyecto está abierto a docentes o estudiantes que deseen colaborar con:
+
+- Traducciones
+- Correcciones ortográficas o técnicas
+- Mejora en la organización o visualización de los contenidos
+
+Por favor, antes de hacer un Pull Request, revisa el archivo [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+
+## Comandos útiles
+
+|Acción|Comando|
+|--|--|
+|Ejecutar en modo desarrollo|`npm run start`|
+|Compilar para producción|`npm run build`|
+|Generar estructura para traducciones|`npm run write-translations`|
+
+## Autor
+
+Proyecto desarrollado por Carlos David Páez Ferreira, Ingeniero de Sistemas y Docente Universitario, como recurso de apoyo para estudiantes y colegas.
+
+## Licencia
+
+Este proyecto está licenciado bajo la MIT License.
