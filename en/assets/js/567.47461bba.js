@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjs_and_ts_in_depth_elective=self.webpackChunkjs_and_ts_in_depth_elective||[]).push([[567],{8567:(e,t,s)=>{s.d(t,{createArchitectureServices:()=>_.S});var _=s(3333);s(9089)}}]);
