@@ -1,0 +1,8 @@
+{
+    "label": "POO, Buenas Prácticas, y Principios",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "Es hora de escribir código con propósito. En este módulo te adentrarás en la Programación Orientada a Objetos (POO) aplicada con TypeScript, comprendiendo a fondo conceptos como clases, herencia, polimorfismo, abstracción e interfaces. Pero no nos quedamos en la teoría: aprenderás a aplicar principios SOLID, a refactorizar con criterio y a escribir código limpio, legible y sostenible. Porque un buen programador no solo hace que funcione... lo hace bien."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "label": "Despliegue y Presentación",
+    "position": 9,
+    "link": {
+        "type": "generated-index",
+        "description": "Llegó el momento de lanzar tu proyecto al mundo. En este módulo aprenderás a preparar builds de producción y desplegar tus aplicaciones en plataformas modernas como GitHub Pages, Netlify y Vercel. También explorarás el uso de variables de entorno y buenas prácticas de seguridad en entornos reales. Porque un gran proyecto no solo se construye... también se muestra con excelencia."
+    }
+}

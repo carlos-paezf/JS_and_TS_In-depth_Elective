@@ -1,0 +1,8 @@
+{
+    "label": "Persistencia y APIs",
+    "position": 7,
+    "link": {
+        "type": "generated-index",
+        "description": "Los datos son el corazón de cualquier aplicación moderna. En este módulo aprenderás a manejar persistencia local con localStorage, sessionStorage e IndexedDB, y a comunicarte con APIs RESTful usando fetch y axios. Dominarás la autenticación con tokens, la gestión avanzada de peticiones y el manejo de errores. Todo lo necesario para que tu aplicación se conecte al mundo real de forma eficiente y segura."
+    }
+}

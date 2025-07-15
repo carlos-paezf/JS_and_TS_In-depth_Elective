@@ -2,46 +2,32 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Bienvenida
 
-Let's discover **Docusaurus in less than 5 minutes**.
+> *"El conocimiento no se guarda, se comparte."* Comunidad de código abierto
 
-## Getting Started
+Este sitio nace con un propósito claro: convertirse en un **espacio de consulta confiable, estructurado y enriquecido** para estudiantes, docentes y entusiastas de la programación que deseen dominar uno de los pilares más importantes del desarrollo de software web: **JavaScript y TypeScript*.
 
-Get started by **creating a new site**.
+En cada módulo encontrarás explicaciones accesibles, ejemplos prácticos, referencias visuales y desafíos pensados para poner a prueba tu compresión. El contenido está diseñado tanto para quienes están dando sus primeros pasos como para quienes buscan profundizar su dominio técnico, con una progresión didáctica y modular.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## ¿Por qué este proyecto?
 
-### What you'll need
+La enseñanza y el aprendizaje de estructuras de datos puede resultar abstracto o complicado si no se cuenta con una guía clara. Esta plataforma busca:
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- Facilitar el acceso a contenidos claves desde un solo lugar.
+- Brindar soporte multilingüe que permita alcanzar una audiencia internacional.
+- Fomentar el aprendizaje colaborativo y el aporte de nuevos contenidos.
+- Promover una competencia práctica y aplicada a proyectos reales.
 
-## Generate a new site
+## ¿Cómo puedes contribuir?
 
-Generate a new Docusaurus site using the **classic template**.
+Este proyecto está construido sobre [Docusaurus](https://docusaurus.io/docs) y es abierto a la comunidad. Puedes:
 
-The classic template will automatically be added to your project after you run the command:
+- Corregir errores o mejorar explicaciones.
+- Traducir secciones a otros idiomas.
+- Aportar nuevos ejemplos, visualizaciones o ejercicios.
+- Compartir con otros colegas o estudiantes.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Una invitación abierta
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Ya seas estudiante, docente o profesional, te invitamos a **explorar, aprender y compartir**. Esta documentación no es solo una fuente de consulta: es una herramienta viva que crece con el conocimiento y la generosidad de quienes  creen en el valor de enseñar y aprender justos.

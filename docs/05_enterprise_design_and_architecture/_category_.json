@@ -1,0 +1,8 @@
+{
+    "label": "Diseño y Arquitectura Empresarial",
+    "position": 6,
+    "link": {
+        "type": "generated-index",
+        "description": "Aquí comienza el verdadero diseño profesional. En este módulo conocerás los patrones de diseño más usados en entornos empresariales —como Factory, Singleton y Repository— y aprenderás a aplicarlos tanto en frontend como en backend. Además, descubrirás cómo organizar tus proyectos con Clean Architecture, separando responsabilidades en capas claras: dominio, aplicación, infraestructura e interfaces. Ideal para construir software escalable, mantenible y preparado para el crecimiento."
+    }
+}

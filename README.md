@@ -10,6 +10,90 @@ Este proyecto es una plataforma de documentación educativa desarrollada con [Do
 
 Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructurado y multilingüe, que facilite el acceso a los siguientes temas:
 
+- Módulo 1: Introducción y Fundamentos Modernos
+  - Objetivos generales y específicos
+  - Metodología y dinámica del curso
+  - Herramientas y entorno de desarrollo sugerido
+  - let, const, y diferencias con var
+  - Arrow functions y contexto del this
+  - Destructuring (arrays y objetos)
+  - Operador spread y rest
+  - Template literals
+  - Clases y herencia
+  - Módulos (import/export)
+  - Operador ternario y nullish coalescing
+- Módulo 2: JavaScript Avanzado
+  - Introducción a la asincronía en JS
+  - Callbacks vs Promises
+  - Encadenamiento de Promises
+  - async/await y control de errores
+  - Fetch API: peticiones GET, POST y manejo de respuestas
+  - Manejo avanzado de errores con try/catch
+  - Cancelación de peticiones y AbortController
+  - Closures: definición y usos prácticos
+  - Funciones de orden superior
+  - Currying y composición
+  - Contexto de ejecución y scopes
+- Módulo 3: Fundamentos de TypeScript
+  - Tipos primitivos y estructuras
+  - Inferencia de tipos vs anotación explícita
+  - Tipado en funciones y parámetros opcionales
+  - Tipado de arreglos, tuplas y objetos
+  - Diferencias entre type e interface
+  - Union types (|)
+  - Intersection types (&)
+  - Tipos literales y enums
+  - Narrowing y type guards
+  - Type alias y interfaces extendidas
+  - Modularización en TypeScript
+  - Namespaces y espacios de nombres
+  - Configuración del compilador (tsconfig.json)
+  - Uso de paths y mapeo de módulos
+  - Integración con librerías externas (DefinitelyTyped)
+- Módulo 4: POO, Buenas Prácticas y Principios
+  - Clases, atributos y métodos
+  - Constructores y parámetros
+  - Herencia y super()
+  - Polimorfismo y abstracción
+  - Interfaces como contratos
+  - Composición vs herencia
+  - Principios SOLID aplicados en TypeScript
+  - Refactorización de código con SRP y OCP
+  - Código legible y mantenible
+  - Comentarios útiles vs innecesarios
+  - Nombres significativos y funciones pequeñas
+- Módulo 5: Diseño y Arquitectura Empresarial
+  - Patrón Factory
+  - Patrón Singleton
+  - Patrón Repository
+  - Aplicación práctica en componentes frontend/backend
+  - Capas de una aplicación empresarial
+  - Clean Architecture aplicada a frontend y backend
+  - Separación de responsabilidades: domain, application, infrastructure, interfaces
+  - Inversión de dependencias y testing estructural
+- Módulo 6: Persistencia y APIs
+  - JSON como formato de intercambio
+  - Uso de localStorage y sessionStorage
+  - IndexedDB: conceptos básicos y APIs
+  - Fundamentos de RESTful APIs
+  - Peticiones con Fetch y configuración avanzada
+  - Alternativa con Axios: interceptores y cancelaciones
+  - Manejo de tokens y autenticación
+- Módulo 7: Documentación y DevOps
+  - Generación de documentación con TypeDoc
+  - Uso de comentarios JSDoc/TSDoc
+  - Documentación de endpoints con Swagger y OpenAPI
+  - Buenas prácticas en documentación de librerías
+  - Integración continua (CI) con GitHub Actions
+  - Linters (ESLint) y formatters (Prettier)
+  - Medición de cobertura de código (Istanbul / NYC / Vitest)
+  - Pre-commits, husky y lint-staged
+- Módulo 8: Despliegue y Presentación
+  - Preparación del build de producción
+  - Hosting en GitHub Pages
+  - Uso de Netlify y Vercel para proyectos empresariales
+  - Variables de entorno y seguridad en despliegues
+
 ## Internacionalización
 
 El portal estará disponible en 2 idiomas:

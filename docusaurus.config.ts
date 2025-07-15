@@ -131,15 +131,15 @@ const config: Config = {
                     items: [
                         {
                             label: 'Data Structures',
-                            href: 'https://github.com/carlos-paezf/Data_Structures',
+                            href: 'https://carlos-paezf.github.io/Data_Structures',
                         },
                         {
                             label: 'Object Oriented Programming Intersemester',
-                            href: 'https://github.com/carlos-paezf/Object_Oriented_Programming_Intersemester'
+                            href: 'https://carlos-paezf.github.io/Object_Oriented_Programming_Intersemester'
                         },
                         {
                             label: 'Software Construction',
-                            href: 'https://github.com/carlos-paezf/Software_Construction'
+                            href: 'https://carlos-paezf.github.io/Software_Construction'
                         }
                     ],
                 },

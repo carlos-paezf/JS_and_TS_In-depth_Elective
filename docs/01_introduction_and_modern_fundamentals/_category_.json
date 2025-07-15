@@ -1,0 +1,8 @@
+{
+    "label": "Introducción y Fundamentos Modernos",
+    "position": 2,
+    "link": {
+        "type": "generated-index",
+        "description": "Este módulo ofrece una base sólida para comprender las características modernas de JavaScript, esenciales para escribir código limpio, eficiente y mantenible. Se abordarán temas clave como el uso de let y const, funciones flecha, desestructuración, clases, módulos y otros elementos fundamentales para el desarrollo moderno en JavaScript. Además, se presentará la metodología del curso y las herramientas recomendadas."
+    }
+}

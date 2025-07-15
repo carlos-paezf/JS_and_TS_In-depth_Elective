@@ -1,0 +1,8 @@
+{
+    "label": "Documentación y DevOps",
+    "position": 8,
+    "link": {
+        "type": "generated-index",
+        "description": "El buen código se entiende... pero el excelente se documenta y se automatiza. En este módulo aprenderás a generar documentación técnica con TypeDoc y Swagger, y a aplicar buenas prácticas con comentarios JSDoc/TSDoc. Además, descubrirás herramientas clave de DevOps como linters, formatters, GitHub Actions y cobertura de código. Automatiza, estandariza y asegura la calidad de tus proyectos desde el primer commit."
+    }
+}
