@@ -2,4 +2,4 @@
 sidebar_position: 1
 ---
 
-# Titulo del tema
+# Objetivos generales y específicos

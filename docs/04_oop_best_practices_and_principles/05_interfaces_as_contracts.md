@@ -2,4 +2,4 @@
 sidebar_position: 5
 ---
 
-# Titulo del tema
+# Interfaces como contratos

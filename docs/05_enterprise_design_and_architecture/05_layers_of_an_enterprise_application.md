@@ -2,4 +2,4 @@
 sidebar_position: 5
 ---
 
-# Titulo del tema
+# Capas de una aplicación empresarial

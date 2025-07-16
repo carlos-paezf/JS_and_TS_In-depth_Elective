@@ -2,4 +2,4 @@
 sidebar_position: 7
 ---
 
-# Titulo del tema
+# Medición de cobertura de código (Istanbul / NYC / Vitest)

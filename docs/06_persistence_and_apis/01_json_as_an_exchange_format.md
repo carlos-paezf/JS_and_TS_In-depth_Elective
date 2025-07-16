@@ -2,4 +2,4 @@
 sidebar_position: 1
 ---
 
-# Titulo del tema
+# JSON como formato de intercambio

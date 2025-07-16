@@ -2,4 +2,4 @@
 sidebar_position: 4
 ---
 
-# Titulo del tema
+# Tipado de arreglos, tuplas y objetos

@@ -2,4 +2,4 @@
 sidebar_position: 3
 ---
 
-# Titulo del tema
+# Tipado en funciones y parámetros opcionales

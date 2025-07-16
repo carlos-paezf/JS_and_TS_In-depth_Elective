@@ -2,4 +2,4 @@
 sidebar_position: 8
 ---
 
-# Titulo del tema
+# Closures: definición y usos prácticos

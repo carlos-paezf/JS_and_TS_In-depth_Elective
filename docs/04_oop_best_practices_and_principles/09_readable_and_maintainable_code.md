@@ -2,4 +2,4 @@
 sidebar_position: 9
 ---
 
-# Titulo del tema
+# Código legible y mantenible

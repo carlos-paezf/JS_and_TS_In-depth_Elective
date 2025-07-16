@@ -2,4 +2,4 @@
 sidebar_position: 11
 ---
 
-# Titulo del tema
+# Nombres significativos y funciones pequeñas

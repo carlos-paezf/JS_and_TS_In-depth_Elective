@@ -2,4 +2,4 @@
 sidebar_position: 9
 ---
 
-# Titulo del tema
+# Funciones de orden superior

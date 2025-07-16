@@ -2,4 +2,4 @@
 sidebar_position: 5
 ---
 
-# Titulo del tema
+# Fetch API: peticiones GET, POST y manejo de respuestas

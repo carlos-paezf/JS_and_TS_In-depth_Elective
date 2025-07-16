@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# Titulo del tema
+# Hosting en GitHub Pages

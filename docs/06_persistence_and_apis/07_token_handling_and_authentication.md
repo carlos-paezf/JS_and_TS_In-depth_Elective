@@ -2,4 +2,4 @@
 sidebar_position: 7
 ---
 
-# Titulo del tema
+# Manejo de tokens y autenticación

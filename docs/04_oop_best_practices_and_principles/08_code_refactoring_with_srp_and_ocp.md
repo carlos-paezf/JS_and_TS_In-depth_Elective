@@ -2,4 +2,4 @@
 sidebar_position: 8
 ---
 
-# Titulo del tema
+# Refactorización de código con SRP y OCP

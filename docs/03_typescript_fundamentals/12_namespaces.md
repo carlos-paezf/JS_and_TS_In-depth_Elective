@@ -2,4 +2,4 @@
 sidebar_position: 12
 ---
 
-# Titulo del tema
+# Namespaces y espacios de nombres

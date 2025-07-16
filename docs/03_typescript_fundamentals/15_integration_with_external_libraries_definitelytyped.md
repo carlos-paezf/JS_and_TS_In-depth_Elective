@@ -2,4 +2,4 @@
 sidebar_position: 15
 ---
 
-# Titulo del tema
+# Integración con librerías externas (DefinitelyTyped)

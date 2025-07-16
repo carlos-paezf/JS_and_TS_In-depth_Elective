@@ -2,4 +2,4 @@
 sidebar_position: 13
 ---
 
-# Titulo del tema
+# Configuración del compilador (tsconfig.json)

@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# Titulo del tema
+# Inferencia de tipos vs anotación explícita

@@ -2,4 +2,4 @@
 sidebar_position: 11
 ---
 
-# Titulo del tema
+# Contexto de ejecución y scopes

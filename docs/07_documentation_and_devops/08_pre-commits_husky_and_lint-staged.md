@@ -2,4 +2,4 @@
 sidebar_position: 8
 ---
 
-# Titulo del tema
+# Pre-commits, husky y lint-staged

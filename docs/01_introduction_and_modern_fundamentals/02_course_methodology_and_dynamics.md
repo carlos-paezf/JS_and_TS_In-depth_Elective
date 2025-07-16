@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# Titulo del tema
+# Metodología y dinámica del curso

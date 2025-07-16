@@ -2,4 +2,4 @@
 sidebar_position: 14
 ---
 
-# Titulo del tema
+# Uso de paths y mapeo de módulos

@@ -2,4 +2,4 @@
 sidebar_position: 4
 ---
 
-# Titulo del tema
+# Buenas prácticas en documentación de librerías
