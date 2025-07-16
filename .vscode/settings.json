@@ -1,0 +1,6 @@
+{
+    "markdownlint.config": {
+        // Ignorar el error de uso de tags HTML en un archivo Markdown
+        "MD033": false
+    },
+}
