@@ -45,12 +45,58 @@ export function demonstrateVariableScopes() {
 
 ## Comportamiento de alcance
 
-```mermaid
-flowchart LR
-    A[function demo] -->|var x|B[Disponible en todo demo]
-    A -->|let y|C[Disponible solo dentro del bloque]
-    A -->|const z|C
+```js showLineNumbers
+console.log(x);    // ✅ undefined
+// console.log(y); // ❌ ReferenceError
+// console.log(z); // ❌ ReferenceError
+
+var x = 5;
+let y = 10;
+const z = 15;
+
+console.log(x, y, z); // ✅ 5 10 15
 ```
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant JS_Engine as JS Engine
+    participant Memory as Memory Allocation
+    participant Step1 as Paso 1: Acceso
+    participant Step2 as Paso 2: Declaración
+    participant Step3 as Paso 3: Uso
+
+    %% Fase de compilación
+    Note over JS_Engine,Memory: Fase 1 – Hoisting
+
+    JS_Engine->>Memory: Reserva espacio para `var x` (inicializa como undefined)
+    JS_Engine->>Memory: Reserva espacio para `let y` (sin inicializar)
+    JS_Engine->>Memory: Reserva espacio para `const z` (sin inicializar)
+
+    %% Fase de ejecución
+    Note over JS_Engine,Step1: Fase 2 – Ejecución
+
+    Step1->>Memory: Accede a `x`
+    Memory-->>Step1: Devuelve `undefined`
+
+    Step1->>Memory: Accede a `y`
+    Memory-->>Step1: ❌ ReferenceError (TDZ)
+
+    Step1->>Memory: Accede a `z`
+    Memory-->>Step1: ❌ ReferenceError (TDZ)
+
+    Step2->>Memory: Inicializa `x = 5`, `y = 10`, `z = 15`
+
+    Step3->>Memory: Accede y usa variables (todos disponibles)
+```
+
+1. Fase de compilación (Hoisting):
+   - `var x`: **se eleva** y se inicializa automáticamente con `undefined`.
+   - `let y` y `const z`: **se elevan**, pero **no se inicializan**, quedando en la **Zona Temporal Muerta (TDZ)**.
+2. Fase de ejecución:
+   - Al acceder a `x` antes de su declaración, retorna `undefined` sin error.
+   - Al acceder a `y` o `z` antes de su inicialización, se lanza un `ReferenceError`.}
+   - Una vez declaradas, todas pueden usarse normalmente (salvo que `const` no puede reasignarse).
 
 ## Hoisting y Temporal Dead Zone (TDZ)
 
