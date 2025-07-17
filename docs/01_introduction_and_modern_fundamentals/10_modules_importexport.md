@@ -107,6 +107,22 @@ import { User } from 'domain/entities/User';
 }
 ```
 
+En caso de que estés usando Vite, debes añadir una configuración adicional:
+
+1. Instala el paquete `vite-tsconfig-paths`
+2. Crear o ve el archivo `vite.config.ts` y valida estas líneas:
+
+   ```ts
+   import { defineConfig } from 'vite';
+   import tsconfigPaths from 'vite-tsconfig-paths';
+
+   export default defineConfig( {
+       plugins: [ tsconfigPaths() ]
+   } );
+   ```
+
+Esto es necesario, porque Vite no usa directamente `tsconfig.json` para resolver rutas de imports, sino que necesita que definas alias explícitamente en `vite.config.ts`.
+
 ## Casos reales
 
 - Librerías como Lodash o Axios exportan múltiples funciones (nombradas).
