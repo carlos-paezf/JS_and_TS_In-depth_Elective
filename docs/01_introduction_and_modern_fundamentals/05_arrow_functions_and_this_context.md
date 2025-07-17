@@ -84,7 +84,7 @@ Usar arrow functions para métodos **limita su reutilización**, especialmente e
 
 ## Código de ejemplo
 
-```js title="src/domain/GreetingService.ts" showLineNumbers
+```ts title="src/domain/GreetingService.ts" showLineNumbers
 /**
  * Demonstrates the difference in `this` binding between
  * traditional functions and arrow functions.
