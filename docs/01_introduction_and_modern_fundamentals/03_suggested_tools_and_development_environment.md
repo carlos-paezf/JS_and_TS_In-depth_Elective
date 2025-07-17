@@ -56,6 +56,48 @@ graph TD
 - **Husky + lint-staged:** Ganchos pre-commit que bloquean código malformado antes de subirlo.
 - **Vitest/Jest:** Pruebas integradas con cobertura y compatibilidad con TypeScript.
 
+## Creación de proyectos JS y TS desde cero
+
+### Proyecto JavaScript puro (Node.js)
+
+Para crear un proyecto de JS puro debes partir con el archivo `package.json`, el cual puedes crearlo al ejecutar el siguiente comando:
+
+```bash
+npm init -y
+```
+
+La bandera `-y` nos permite omitir el ingresar datos que serán almacenados en `package.json`.
+
+También es aconsejable instalar las siguientes herramientas básicas:
+
+```bash
+npm install eslint prettier --save-dev
+npx eslint --init
+```
+
+### Proyecto TypeScript puro
+
+Para un proyecto de TS puro, puedes seguir los anteriores pasos, pero debes inicializar TS con los siguientes comandos:
+
+```bash
+npm install typescript --save-dev
+npx tsc --init
+```
+
+:::info
+
+Al momento de instalar una dependencia puedes abreviar pasos, por ejemplo: el comando `install` lo puedes reemplazar por `i`, la bandera `--save-dev` la puedes reemplazar por `-D`, y aunque viene por defecto desde la versión 5 de npm y no es necesario declararla, `--save` la puedes abreviar por `-S`. Con este presente nuestro comando anterior puede quedar como  `npm i typescript -D`
+
+:::
+
+Otro paso importante es instalar ts-node para ejecutar el código typescript
+
+```bash
+pnpm i -D ts-node
+```
+
+Pero, lo puedes omitir transpilando el código a JS con el comando `npx tsc`, habiendo configurado la propiedad `outDir` en `tsconfig.json`
+
 ## Scripts recomendados en `package.json`
 
 ```json
@@ -70,6 +112,18 @@ graph TD
   }
 }
 ```
+
+## Crear proyecto con Vite
+
+Vite es ideal para frontend (JS/TS), pero también útil para APIs mock o demos empresariales.
+
+Para crear un proyecto con una plantilla de Vite debes ejecutar:
+
+```bash
+npm create vite@latest
+```
+
+En este paso seleccionas la plantilla de tu elección, en este caso, seleccionamos la plantilla de Vanilla + TS, y seguimos los pasos en consola.
 
 ## Clean Architecture aplicado
 
@@ -93,7 +147,7 @@ project-root/
 
 ## Configuración base de `tsconfig.json`
 
-```json
+```json json title="tsconfig.json" showLineNumbers
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -106,6 +160,59 @@ project-root/
   "include": ["src/**/*"]
 }
 ```
+
+## Configurar rutas absolutas
+
+Este paso es importante para evitar imports largos y poco mantenibles.
+
+1. Edita el archivo `tsconfig.json`
+
+   ```json title="tsconfig.json" showLineNumbers
+   {
+     "compilerOptions": {
+       "baseUrl": "./src",
+       "paths": {
+         "@domain/*": ["domain/*"],
+         "@app/*": ["application/*"],
+         "@infra/*": ["infrastructure/*"]
+       }
+     }
+   }
+   ```
+
+2. En el archivo `main.ts` (o cualquier archivo que importe módulos), importa:
+
+```ts
+import { User } from '@domain/entities/User';
+import { CreateUserUseCase } from '@app/usecases/CreateUser';
+```
+
+Si estás usando Vite, debes configurar el archivo `vite.config.ts` para que reconozca los paths (esto también aplica para JS):
+
+1. Instala la siguiente dependencia:
+
+   ```bash
+   npm install -D @rollup/plugin-alias
+   ```
+
+2. Edita `vite.config.ts`:
+
+   ```ts title="vite.config.ts" showLineNumbers
+   import { defineConfig } from 'vite';
+   import path from 'path';
+
+   export default defineConfig({
+     resolve: {
+       alias: {
+         '@domain': path.resolve(__dirname, './src/domain'),
+         '@app': path.resolve(__dirname, './src/application'),
+         '@infra': path.resolve(__dirname, './src/infrastructure'),
+       },
+     },
+   });
+   ```
+
+3. Es importante que valides que estás usando `baseUrl` en `tsconfig.json` y `alias` en `vite.config.ts` al mismo tiempo.
 
 ## Casos de uso reales
 
