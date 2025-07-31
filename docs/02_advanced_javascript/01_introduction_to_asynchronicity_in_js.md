@@ -50,6 +50,10 @@ Salida:
 
 La función `setTimeout` se ejecuta después de que el resto del código ha terminado, no bloquea el flujo principal.
 
+## Representación visual
+
+![a](./img/01_asynchronic.gif)
+
 ## Flujo asincrónico en JavaScript
 
 ```mermaid
@@ -95,3 +99,4 @@ sequenceDiagram
 - Mozilla Developer Network. (s.f.). [Concurrency model and Event Loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop).
 - TypeScript Handbook. (s.f.). [Asynchronous Programming](https://www.typescriptlang.org/docs).
 - Node.js Docs. (s.f.). [Timers](https://nodejs.org/api/timers.html).
+- Gupta, I. (2024). [Promise Patterns vs Async/Await: A developer's Guide](https://levelup.gitconnected.com/promise-patterns-vs-async-await-a-developers-guide-dfba4fe4a520). Medium.
