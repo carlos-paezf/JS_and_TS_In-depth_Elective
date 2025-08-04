@@ -1,6 +1,6 @@
 {
-    "label": "JavaScript Avanzado",
-    "position": 3,
+    "label": "Conceptos Avanzados",
+    "position": 4,
     "link": {
         "type": "generated-index",
         "description": "Prepárate para llevar tus habilidades al siguiente nivel. En este módulo exploraremos el lado más poderoso y versátil de JavaScript: la asincronía. Aprenderás a dominar callbacks, promises, y async/await con ejemplos prácticos, entenderás cómo gestionar errores de forma elegante y descubrirás conceptos como closures, funciones de orden superior y composición funcional. Todo lo necesario para escribir código moderno, robusto... y con estilo."

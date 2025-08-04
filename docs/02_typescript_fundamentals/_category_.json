@@ -1,6 +1,6 @@
 {
     "label": "Fundamentos de TypeScript",
-    "position": 4,
+    "position": 3,
     "link": {
         "type": "generated-index",
         "description": "Si JavaScript es flexible, TypeScript es su versión con superpoderes. En este módulo descubrirás cómo escribir código más seguro, predecible y mantenible gracias al tipado estático. Aprenderás a usar tipos primitivos, estructuras complejas, type, interface, unión e intersección de tipos, y mucho más. Además, conocerás cómo configurar el compilador y cómo integrar TypeScript en proyectos reales. Tu código nunca volverá a ser el mismo."

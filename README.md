@@ -22,19 +22,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
   - Clases y herencia
   - Módulos (import/export)
   - Operador ternario y nullish coalescing
-- Módulo 2: JavaScript Avanzado
-  - Introducción a la asincronía en JS
-  - Callbacks vs Promises
-  - Encadenamiento de Promises
-  - async/await y control de errores
-  - Fetch API: peticiones GET, POST y manejo de respuestas
-  - Manejo avanzado de errores con try/catch
-  - Cancelación de peticiones y AbortController
-  - Closures: definición y usos prácticos
-  - Funciones de orden superior
-  - Currying y composición
-  - Contexto de ejecución y scopes
-- Módulo 3: Fundamentos de TypeScript
+- Módulo 2: Fundamentos de TypeScript
   - Tipos primitivos y estructuras
   - Inferencia de tipos vs anotación explícita
   - Tipado en funciones y parámetros opcionales
@@ -50,6 +38,18 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
   - Configuración del compilador (tsconfig.json)
   - Uso de paths y mapeo de módulos
   - Integración con librerías externas (DefinitelyTyped)
+- Módulo 3: Conceptos Avanzados
+  - Introducción a la asincronía en JS
+  - Callbacks vs Promises
+  - Encadenamiento de Promises
+  - async/await y control de errores
+  - Fetch API: peticiones GET, POST y manejo de respuestas
+  - Manejo avanzado de errores con try/catch
+  - Cancelación de peticiones y AbortController
+  - Closures: definición y usos prácticos
+  - Funciones de orden superior
+  - Currying y composición
+  - Contexto de ejecución y scopes
 - Módulo 4: POO, Buenas Prácticas y Principios
   - Clases, atributos y métodos
   - Constructores y parámetros
