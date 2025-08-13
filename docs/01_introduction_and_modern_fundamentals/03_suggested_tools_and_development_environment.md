@@ -150,12 +150,14 @@ project-root/
 ```json json title="tsconfig.json" showLineNumbers
 {
   "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
     "target": "ES2020",
     "module": "CommonJS",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "outDir": "./dist"
+    "verbatimModuleSyntax": false,
   },
   "include": ["src/**/*"]
 }
