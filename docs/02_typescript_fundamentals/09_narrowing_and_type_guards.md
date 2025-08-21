@@ -146,14 +146,14 @@ classDiagram
   }
 
   %% Aplicación
-  class OrderRepo {
+  class OrderRepository {
     <<interface>>
     +findById(id: string): Promise<Order | null>
     +save(o: Order): Promise<void>
   }
 
   class PayOrder {
-    -repo: OrderRepo
+    -repo: OrderRepository
     +execute(orderId: string): Promise<Order>
   }
 
@@ -165,8 +165,8 @@ classDiagram
 
   %% Relaciones
   OrderStatus --> Order : uses
-  OrderRepo --> Order : uses
-  PayOrder --> OrderRepo : depends on
+  OrderRepository --> Order : uses
+  PayOrder --> OrderRepository : depends on
   PayOrder --> Order : returns
   payOrderHandler --> PayOrder : uses
   payOrderHandler --> Order : returns
@@ -180,17 +180,19 @@ export type OrderStatus = "PENDING" | "PAID" | "CANCELLED";
 export interface Order { id: string; total: number; status: OrderStatus }
 ```
 
+```ts showLineNumbers title="domain/ports/OrderRepository.ts"
+export interface OrderRepository {
+  findById(id: string): Promise<Order | null>;
+  save(o: Order): Promise<void>;
+}
+```
+
 </TabItem>
 <TabItem value="application" label="Aplicación">
 
 ```ts showLineNumbers title="application/usecases/PayOrder.ts"
-export interface OrderRepo {
-  findById(id: string): Promise<Order | null>;
-  save(o: Order): Promise<void>;
-}
-
 export class PayOrder {
-  constructor(private readonly repo: OrderRepo) {}
+  constructor(private readonly repo: OrderRepository) {}
 
   async execute(orderId: string): Promise<Order> {
     const o = await this.repo.findById(orderId);
