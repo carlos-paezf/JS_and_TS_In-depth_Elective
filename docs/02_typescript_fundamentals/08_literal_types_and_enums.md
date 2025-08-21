@@ -165,6 +165,51 @@ import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
 <Tabs>
+<TabItem value="diagram" label="Diagrama de Clases">
+
+```mermaid
+classDiagram
+  %% Dominio
+  class Order {
+    +string id
+    +number total
+    +OrderStatus status
+  }
+  class OrderStatus {
+    <<enumeration>>
+    "PENDING"
+    "PAID"
+    "CANCELLED"
+  }
+
+  %% Aplicación
+  class OrderRepo {
+    <<interface>>
+    findById(id: string): Promise<Order|null>
+    save(o: Order): Promise<void>
+  }
+    
+  class PayOrder {
+    -repo: OrderRepo
+    +execute(orderId: string): Promise<Order>
+  }
+
+  %% Interfaz
+  class payOrderHandler {
+    <<function>>
+    +payOrderHandler(req: Request, res: Response): Promise<Response>
+  }
+
+  %% Relaciones
+  OrderStatus --> Order : uses
+  PayOrder --> Order : returns
+  PayOrder --> Order : updates
+  PayOrder --> OrderRepo : "depends on"
+  payOrderHandler --> PayOrder : uses
+  payOrderHandler --> Order : returns
+```
+
+</TabItem>
 <TabItem value="domain" label="Dominio">
 
 ```ts showLineNumbers title="domain/entities/Order.ts"
@@ -219,15 +264,6 @@ export async function payOrderHandler(req: Request, res: Response) {
 
 </TabItem>
 </Tabs>
-
-```mermaid
-stateDiagram-v2
-  [*] --> PENDING
-  PENDING --> PAID: pay()
-  PENDING --> CANCELLED: cancel()
-  PAID --> [*]
-  CANCELLED --> [*]
-```
 
 ## Patrón híbrido: objeto `as const` + tipo derivado
 
